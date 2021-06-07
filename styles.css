@@ -483,7 +483,7 @@ input[type="search"] {
 .services1 p, .services2 p, .services3 p {
     opacity: 0.5;
 }
-@media screen and (max-width: 767px) 
+@media screen and (max-width: 768px) 
 {
   body {
         width: auto;
@@ -544,7 +544,6 @@ input[type="search"] {
     }
     #list {
         display: block;
-        border: solid green;
         width: auto;
     }
     .fil {
@@ -558,12 +557,10 @@ input[type="search"] {
     }
     .list1 {
         margin-bottom: 10px;
-        border: solid;
     }
     .list1 p {
-        border: solid;
+       margin-right: auto;
     }
-    
     #connus {
         width: 100%;
         margin-bottom: 10px;
@@ -658,18 +655,17 @@ input[type="search"] {
     .act3, .act4, .act5, .act6, .act7, .act8 {
         width: auto;
         height: 50px;
-        border: solid 1px;
         margin-bottom: auto;
     }
     #bloc-fin {
         width: auto;
+        height: auto;
         margin-left: 5%;
-        display: block;
         padding-bottom: 20px;
         padding-top: 20px;
     }
 }
-@media all and (min-width: 767px) and (max-width: 991px)
+@media all and (min-width: 768px) and (max-width: 991px)
 {
     #logmenu {
         width: 90%;
