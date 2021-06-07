@@ -1,6 +1,6 @@
 body {
     font-family: raleway, sans-serif;
-    width: 100%;
+    width: auto;
 }
 #logmenu {
     display: flex;
@@ -114,7 +114,6 @@ input[type="search"] {
     display: flex;
     width: 340px;
     justify-content: space-between;
-    border: solid;
 }
 .list1 {
     border: solid 2px #F2F2F2;
@@ -257,6 +256,7 @@ input[type="search"] {
     cursor: pointer;
     height: auto;
     width: auto;
+    box-shadow: 0px 0px 4px #000000;
 }
 .hotmer, .aubpanier, .hotamina {
     margin-top: 30px;
@@ -283,11 +283,8 @@ input[type="search"] {
     color: #0000ff; 
     height: auto; 
 }
-.etoile4 {
-    color: #F2F2F2;
-}
-.etoile5 {
-    color: #F2F2F2;
+.etoile4, .etoile5 {
+    color: #707070;
 }
 .plus {
     margin-right: auto;
@@ -334,6 +331,7 @@ input[type="search"] {
     background-color: #ffffff;
     border-radius: 10px 10px 10px 10px;
     margin-top: 0px;
+    box-shadow: 0px 0px 4px #000000;
 }
 .solmatin, .coeur-eau, .hotbleu {
     display: flex;
@@ -389,7 +387,7 @@ input[type="search"] {
     height: 500px;
     width: 45%;
     border-radius: 20px 20px 20px 20px;
-    border: solid 2px #F2F2F2;
+    box-shadow: 0px 0px 4px #000000;
 } 
 .vieuxport:hover, .calanques:hover, .fortpome:hover, .ilefri:hover, .eglise:hover, .langchamp:hover{
     transform: scale(1.02);
@@ -399,10 +397,9 @@ input[type="search"] {
     height: 450px;
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
-    margin-bottom: 0px;
 }
 .act3, .act6 {
-    width: 100%;
+    width: auto;
     height: 50px;
     padding-left: 20px;
     border-radius: 0px 0px 20px 20px; 
@@ -411,14 +408,14 @@ input[type="search"] {
     width: auto;
     height: 250px;
     border-radius: 20px 20px 20px 20px;
-    border: solid 1px;
+    box-shadow: 0px 0px 4px #000000;
 }
 .ilefri {
     width: auto;
     height: 190px;
     border-radius: 20px 20px 20px 20px;
-    border: solid 1px;
     margin-top: 58px;
+    box-shadow: 0px 0px 4px #000000;
 }
 .fortpome img {
     height: 205px;
@@ -441,15 +438,15 @@ input[type="search"] {
 .eglise {
     width: auto;
     height: 220px;
-    border: solid 1px;
     border-radius:  20px 20px 20px 20px;
+    box-shadow: 0px 0px 4px #000000;
 }
 .langchamp {
     width: auto;
     height: 220px;
-    border: solid 1px;
     border-radius:  20px 20px 20px 20px;
     margin-top: 58px;
+    box-shadow: 0px 0px 4px #000000;
 }
 .eglise img, .langchamp img {
     height: 175px;
@@ -462,11 +459,17 @@ input[type="search"] {
     padding-left: 20px;
     border-radius: 0px 0px 20px 20px;
 }
+.act3 p, .act4 p, .act5 p, .act6 p, .act7 p, .act8 p {
+    margin-top: 5px;
+    font-size: 13px;
+    width: auto;
+}
+ 
 #bloc-fin {
     display:flex;
     background-color:#F2F2F2;
     width: 95%;
-     
+    margin-left: 2.5%;  
 }
 #services {
     display: flex;
@@ -480,7 +483,7 @@ input[type="search"] {
 .services1 p, .services2 p, .services3 p {
     opacity: 0.5;
 }
-@media screen and (max-width: 768px) 
+@media screen and (max-width: 767px) 
 {
   body {
         width: auto;
@@ -666,7 +669,7 @@ input[type="search"] {
         padding-top: 20px;
     }
 }
-@media all and (min-width: 768px) and (max-width: 991px)
+@media all and (min-width: 767px) and (max-width: 991px)
 {
     #logmenu {
         width: 90%;
@@ -692,9 +695,47 @@ input[type="search"] {
     .blocphoto {
         width: 100%;
         display: flex;
+        justify-content: space-between;
+    }
+    .solmatin, .coeur-eau, .hotbleu {
+        height: 100%;
     }
     .bleu, .coeur, .soleil {
-        width: 29%;
+        width: 33%;
+        height: 100%;
+    }
+    .bleu img, .coeur img, .soleil img {
+        width: 35%;
+        height: 130px;
+    }
+    .bleu p, .coeur p, .soleil p {
+        width: 100%;
+        font-size: 15px;
+        margin-top: 2px;
+        height: auto;  
+    }
+    .prix {
+       width: 100%;
+       flex-wrap: nowrap;
+       height: 30px;
+       margin-top: 10px;
+    }
+    .nom {
+        height: 40px;
+        width: 100%;
+    }
+    .star7, .star8, .star9 {
+        margin-top: 10px;
+        width: 100%;
+        height: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .connu1, .connu2, .connu3 {
+        height: auto;
+        width: 65%;
+        padding-left: 0%;
+        flex-wrap: nowrap;
     }
     .canne, .port1, .mouettes,  .mer, .panier, .amina {
         width: 30%;
@@ -705,7 +746,6 @@ input[type="search"] {
         height: 150px;
         object-fit: cover;
     }
-    
     #hebermarseille {
         display: flex;
         flex-direction: column-reverse;
@@ -716,6 +756,5 @@ input[type="search"] {
     .act3,.act4, .act5, .act6, .act7, .act8 {
         flex-wrap: nowrap;
         width: auto;
-        border: solid 1px;
     }  
 }
