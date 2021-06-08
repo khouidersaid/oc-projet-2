@@ -256,7 +256,7 @@ input[type="search"] {
     cursor: pointer;
     height: auto;
     width: auto;
-    box-shadow: 0px 0px 4px #000000;
+    box-shadow: 0px 0px 8px #000000;
 }
 .hotmer, .aubpanier, .hotamina {
     margin-top: 30px;
@@ -331,7 +331,7 @@ input[type="search"] {
     background-color: #ffffff;
     border-radius: 10px 10px 10px 10px;
     margin-top: 0px;
-    box-shadow: 0px 0px 4px #000000;
+    box-shadow: 0px 0px 8px #000000;
 }
 .solmatin, .coeur-eau, .hotbleu {
     display: flex;
@@ -387,7 +387,7 @@ input[type="search"] {
     height: 500px;
     width: 45%;
     border-radius: 20px 20px 20px 20px;
-    box-shadow: 0px 0px 4px #000000;
+    box-shadow: 0px 0px 8px #000000;
 } 
 .vieuxport:hover, .calanques:hover, .fortpome:hover, .ilefri:hover, .eglise:hover, .langchamp:hover{
     transform: scale(1.02);
@@ -408,14 +408,14 @@ input[type="search"] {
     width: auto;
     height: 250px;
     border-radius: 20px 20px 20px 20px;
-    box-shadow: 0px 0px 4px #000000;
+    box-shadow: 0px 0px 8px #000000;
 }
 .ilefri {
     width: auto;
     height: 190px;
     border-radius: 20px 20px 20px 20px;
     margin-top: 58px;
-    box-shadow: 0px 0px 4px #000000;
+    box-shadow: 0px 0px 8px #000000;
 }
 .fortpome img {
     height: 205px;
@@ -439,14 +439,14 @@ input[type="search"] {
     width: auto;
     height: 220px;
     border-radius:  20px 20px 20px 20px;
-    box-shadow: 0px 0px 4px #000000;
+    box-shadow: 0px 0px 8px #000000;
 }
 .langchamp {
     width: auto;
     height: 220px;
     border-radius:  20px 20px 20px 20px;
     margin-top: 58px;
-    box-shadow: 0px 0px 4px #000000;
+    box-shadow: 0px 0px 8px #000000;
 }
 .eglise img, .langchamp img {
     height: 175px;
@@ -487,7 +487,6 @@ input[type="search"] {
 {
   body {
         width: auto;
-        border: solid;
         margin-right: auto;
     }
     .logo {
@@ -663,6 +662,10 @@ input[type="search"] {
         margin-left: 5%;
         padding-bottom: 20px;
         padding-top: 20px;
+    }
+    #services {
+        display: block;
+        justify-content: space-between; 
     }
 }
 @media all and (min-width: 768px) and (max-width: 991px)
