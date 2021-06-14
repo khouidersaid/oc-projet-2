@@ -136,7 +136,7 @@ input[type="search"] {
     border-radius:  2rem 2rem 2rem 2rem;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     position: relative;
     cursor: pointer;
 }
@@ -156,7 +156,9 @@ input[type="search"] {
 }
 .list2 p {
     text-align: center;
-    margin-left: 10px;
+    margin-left: 40px;
+   
+    width: auto;
 }
 .list2:hover {
     background: #f2f7ff;
@@ -282,7 +284,6 @@ input[type="search"] {
     font-size: 15px;
     margin-bottom: auto;
     margin-top: auto;
-   
     font-weight: bold;
     height: 25px;
 }
@@ -401,6 +402,7 @@ input[type="search"] {
 }
 .vieuxport:hover, .calanques:hover, .fortpome:hover, .ilefri:hover, .eglise:hover, .langchamp:hover{
     transform: scale(1.02);
+    cursor: pointer;
 }
 .vieuxport, .calanques {
     height: 100%;
@@ -512,193 +514,11 @@ input[type="search"] {
 .services1 p, .services2 p, .services3 p {
     opacity: 0.5;
 }
-@media screen and (max-width: 768px) 
-{
-  body {
-        width: auto;
-        margin-right: auto;
-    }
-    .logo {
-        grid-area: logmenu;
-    }
-    .menu-services {
-        grid-area: heber;
-        width: 100%;
-    }
-    .menu-services a {
-        width: 50%;
-        border-bottom: solid #F2F2F2;
-    }
-    .menu-services a:hover{
-        border-bottom: #0000ff 3px solid;   
-    }
-    .act0:hover, .act1:hover {
-        border-top: none;
-    }
-    .inscription {
-        grid-area: inscription;
-        padding-right: 10px;
-        margin-left: auto;
-    }
-    #logmenu {
-        width: auto;
-        display: grid;
-        grid-template-areas:
-        "logmenu . inscription"
-        "heber heber heber"
-    }
-    input[type="submit"] {
-        display: none;
-    }
-    .navigation {
-        width: auto;
-        margin-right: 10px;
-    }
-    .maps {
-       margin-left: 0px;
-    }
-    #search {
-        width: 100%;
-    }
-    .mobsearch {
-        display: flex;
-        color: #ffffff;
-        background-color: #0000ff;
-        justify-content: center;
-        align-items: center;
-        height: 30px;
-        width: 50px;
-        border-radius: 0% 25% 25% 0%;
-    }
-    #list {
-        display: block;
-        width: auto;
-    }
-    .fil {
-        width: auto;
-        height: 20px;
-        margin-bottom: 10px;
-    }
-    .eco {
-        width: auto;
-        justify-content: space-between;
-    }
-    .list1 {
-        margin-bottom: 10px;
-    }
-    .list1 p {
-       margin-right: auto;
-    }
-    #connus {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-    #titre {
-        width: auto;
-        height: auto;
-    }
-    .titreconu p, .graph {
-        margin-bottom: 05px;
-    }
-    .bleu, .coeur, .soleil {
-        width: auto;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    .connu1, .connu2, .connu3 {
-        margin-left: 10px;
-        padding-left: 20px;
-    }  
-    #hebermarseille{
-        display: flex;
-        flex-direction: column-reverse;
-        width: auto;
-        height: auto;
-        margin-bottom: 10px;
-    }
-    #blocprinc {
-        width: 100%;
-        height: auto;
-    }
-    .titre-heber {
-        width: auto;
-        height: auto;
-    }
-    .titre-heber p {
-       margin-top: 10px;
-       margin-left: 10px;
-    }
-    #bloc1 {
-        display: block;
-        width: 100%;
-        height: 100%;
-    }
-    .hotmer, .aubpanier, .hotamina {
-        margin-top: 0px;
-    }
-    .canne, .port1, .mouettes,  .mer, .panier, .amina {
-        width: auto;
-        height: auto;
-    }
-    .canne img, .port1 img, .mouettes img, .mer img, .panier img, .amina img {
-        width: 100%;
-        height: 150px;
-        object-fit: cover;
-    }
-    .plus p {
-        margin-left: 10px;
-    }
-    #activites {
-        width: auto;
-    }
-    .maractiv {
-        margin-left: 10px;
-    }
-    #bloc-milieu {
-        display: block;
-        width:auto;
-        height: auto;
-    }
-    #miniport, #miniparc {
-        display: block;
-        width: auto;
-        height: 100%;
-    }
-    #miniparc1, #miniport1 {
-        width: auto;
-        height: auto;
-    }
-    .fortpome img, .eglise img, .calanques img, .ilefri img, .vieuxport img, .langchamp img {
-        width: 100%;
-        height:150px;
-        margin-top: auto;
-        object-fit: cover;
-    }
-    .fortpome, .eglise, .calanques, .ilefri, .vieuxport, .langchamp {
-        width: 95%;
-        height: auto;
-        margin-top: 20px;
-        margin-left: 2.5%;
-    }
-    .act3, .act4, .act5, .act6, .act7, .act8 {
-        width: auto;
-        height: 50px;
-        margin-bottom: auto;
-    }
-    #bloc-fin {
-        width: auto;
-        height: auto;
-        margin-left: 5%;
-        padding-bottom: 20px;
-        padding-top: 20px;
-    }
-    #services {
-        display: block;
-        justify-content: space-between; 
-    }
-}
 @media screen and (min-width: 768px) and (max-width: 991px)
 {
+    body {
+        width: 100%;
+    }
     #logmenu {
         width: 90%;
         display: flex;
@@ -709,28 +529,62 @@ input[type="search"] {
         justify-content: space-between;
         margin-left: auto;
     }
+    #list {
+        width: auto; 
+        margin-left: 5%;
+        margin-right: 2%;
+    }
+    .list2 {
+        width: 25%;
+        margin-right: 20px;
+    }
+    .list2 p {
+        width: auto;
+    }
+    #hebermarseille {
+        width: auto;
+        margin-right: auto;
+    }
+    .titre-heber {
+        height: auto;
+        margin-bottom: 0px;
+    }
+    .titre-heber p {
+        margin-left: 0px;
+    }
     #blocprinc {
-        width: 100%;
+        width: auto;
     }
     #bloc1 {
         width: 100%;
         height: 100%;
+        margin-left: 0px;
+        padding-right: 10px;
     }
     #connus {
-        width: 100%;
+        width: auto;
         margin-bottom: 10px;
+    }
+    .bloc2 {
+        width: 100%;
     }
     .blocphoto {
         width: 100%;
         display: flex;
-        justify-content: space-between;
+        padding-top: 2px;
+        padding-left: -50px;
     }
     .solmatin, .coeur-eau, .hotbleu {
         height: 100%;
     }
-    .bleu, .coeur, .soleil {
-        width: 33%;
+    .bleu, .coeur {
+        width: 35%;
         height: 100%;
+    }
+    .soleil {
+        width: 35%;
+        height: 100%;
+        margin-left: 20px;
     }
     .bleu img, .coeur img, .soleil img {
         width: 35%;
@@ -833,5 +687,226 @@ input[type="search"] {
     .act3, .act6 {
         height: 30%;
     }
-    
 }
+@media screen and (max-width: 768px) 
+{
+  body {
+        width: 100%; 
+        margin-left: auto;
+    }
+    .logo {
+        margin-left: 10%;
+        grid-area: logmenu;
+    }
+    .menu-services {
+        grid-area: heber;
+        width: 100%;
+    }
+    .menu-services a {
+        width: 50%;
+        border-bottom: solid #F2F2F2;
+    }
+    .menu-services a:hover{
+        border-bottom: #0000ff 3px solid;   
+    }
+    .act0:hover, .act1:hover {
+        border-top: none;
+    }
+    .inscription {
+        grid-area: inscription;
+        padding-right: 10px;
+        margin-left: auto;
+    }
+    #logmenu {
+        width: 100%;
+        margin-left: auto;
+        display: grid;
+        grid-template-areas:
+        "logmenu . inscription"
+        "heber heber heber"
+    }
+    input[type="submit"] {
+        display: none;
+    }
+    .navigation {
+        width: auto;
+        margin-right: 10px;
+    }
+    .maps {
+       margin-left: 0px;
+    }
+    #search {
+        width: 100%;
+    }
+    .mobsearch {
+        display: flex;
+        color: #ffffff;
+        background-color: #0000ff;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        width: 50px;
+        border-radius: 0% 25% 25% 0%;
+    }
+    #list {
+        display: block;
+        width: auto;
+    }
+    .fil {
+        width: auto;
+        height: 20px;
+        margin-bottom: 10px;
+    }
+    .eco {
+        width: auto;
+        justify-content: space-between;
+    }
+    .list1 {
+        margin-bottom: 10px;
+    }
+    .list1 p {
+       margin-right: auto;
+    }
+    #connus {
+        width: auto;
+        margin-bottom: 10px;
+        padding-left: 10px;
+    }
+    #titre {
+        width: 100%;
+        height: auto;
+        justify-content: space-between;
+    }
+    .titreconu p {
+        margin-bottom: 05px;
+        width: auto;
+        margin-left: -10px;
+    }
+    .graph {
+        margin-bottom: 05px;
+        margin-right: 10px;
+    }
+    .blocphoto {
+        display: flex;
+        flex-direction: column;
+    }
+    .bleu, .coeur, .soleil {
+        width: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .connu1, .connu2, .connu3 {
+        margin-left: 10px;
+        padding-left: 20px;
+    }  
+    #hebermarseille{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        margin-left: auto;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    #blocprinc {
+        width: 100%;
+        height: auto;
+    }
+    .titre-heber {
+        width: auto;
+        height: auto;
+    }
+    .titre-heber p {
+       margin-top: 10px;
+       margin-left: 20px;
+    }
+    #bloc1 {
+        display: block;
+        width: auto;
+        height: 100%;
+        margin-left: 20px;
+        padding-right: 10px;
+        margin-right: 10px;
+       
+    }
+    .hotmer, .aubpanier, .hotamina {
+        margin-top: 0px;
+    }
+    .canne, .port1, .mouettes,  .mer, .panier, .amina {
+        width: auto;
+        height: auto;
+    }
+    .canne img, .port1 img, .mouettes img, .mer img, .panier img, .amina img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+    .plus p {
+        margin-left: 10px;
+    }
+    .plus {
+        width: auto;
+        padding-left: 10px;
+    }
+    #activites {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .maractiv {
+        margin-left: 10px;
+        padding-left: 10px;
+    }
+    #bloc-milieu {
+        display: block;
+        width:auto;
+        height: auto;
+        padding-left: 5px;
+    }
+    #miniport, #miniparc {
+        display: block;
+        width: auto;
+        height: auto;
+    }
+    #miniparc1, #miniport1 {
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+    .fortpome img, .eglise img, .calanques img, .ilefri img, .vieuxport img, .langchamp img {
+        width: 100%;
+        height:150px;
+        margin-top: auto;
+        object-fit: cover;
+    }
+    .eglise, .calanques, .vieuxport, .langchamp, .ilefri {
+        width: 95%;
+        height: auto;
+        margin-top: 20px;
+        margin-left: 2.5%;
+    }
+    .fortpome {
+        width: 95%;
+        margin-left: 2.5%;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+    .act3, .act4, .act5, .act6, .act7, .act8 {
+        width: auto;
+        height: 50px;
+        margin-bottom: auto;
+    }
+    #bloc-fin {
+        width: 100%;
+        height: auto;
+        margin-left: auto;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    #services {
+        display: block;
+        justify-content: space-between; 
+    }
+}
+
