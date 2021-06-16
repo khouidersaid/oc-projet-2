@@ -514,10 +514,12 @@ input[type="search"] {
 .services1 p, .services2 p, .services3 p {
     opacity: 0.5;
 }
-@media screen and (min-width: 768px) and (max-width: 991px)
+@media screen and (max-width: 1024px)
 {
     body {
         width: 100%;
+        padding: auto;
+        margin: auto;
     }
     #logmenu {
         width: 90%;
@@ -532,17 +534,28 @@ input[type="search"] {
     #list {
         width: auto; 
         margin-left: 5%;
-        margin-right: 2%;
+        margin-right: 5%;
+    }
+    .fil {
+        margin-right: 10px;
+        font-size: 20px;
+    }
+    .list1 {
+        margin-right: 5px;
+    }
+    .list1 p {
+        margin-left: 50px;
+        margin-right: auto;
     }
     .list2 {
-        width: 25%;
-        margin-right: 20px;
+        width: 110px;
     }
     .list2 p {
         width: auto;
+        padding-left: -40px;
     }
     #hebermarseille {
-        width: auto;
+        width: 100%;
         margin-right: auto;
     }
     .titre-heber {
@@ -688,11 +701,12 @@ input[type="search"] {
         height: 30%;
     }
 }
-@media screen and (max-width: 768px) 
+@media screen and (max-width: 766px) 
 {
   body {
         width: 100%; 
-        margin-left: auto;
+        margin: auto;
+        padding: auto;
     }
     .logo {
         margin-left: 10%;
@@ -767,10 +781,16 @@ input[type="search"] {
     .list1 p {
        margin-right: auto;
     }
+    .list2 {
+        width: 200px;
+    }
     #connus {
-        width: auto;
+        width: 100%;
         margin-bottom: 10px;
-        padding-left: 10px;
+        margin-left: 0%;
+    }
+    .bloc2 {
+        padding-left: 0%;
     }
     #titre {
         width: 100%;
@@ -791,24 +811,24 @@ input[type="search"] {
         flex-direction: column;
     }
     .bleu, .coeur, .soleil {
-        width: auto;
-        margin-left: 10px;
-        margin-right: 10px;
+        width: 95%;
+        margin: auto;
+        margin-top: 10px;
     }
     .connu1, .connu2, .connu3 {
-        margin-left: 10px;
-        padding-left: 20px;
+       margin-left: 10px;
     }  
     #hebermarseille{
         display: flex;
         flex-direction: column-reverse;
         width: 100%;
-        margin-left: auto;
         height: auto;
         margin-bottom: 10px;
+        margin-left: 0%;
     }
     #blocprinc {
         width: 100%;
+        margin: auto;
         height: auto;
     }
     .titre-heber {
@@ -817,22 +837,23 @@ input[type="search"] {
     }
     .titre-heber p {
        margin-top: 10px;
-       margin-left: 20px;
+       margin-left: 10px;
     }
     #bloc1 {
         display: block;
         width: auto;
-        height: 100%;
-        margin-left: 20px;
-        padding-right: 10px;
-        margin-right: 10px;
-       
+        height: 100%; 
+        margin: auto;
     }
-    .hotmer, .aubpanier, .hotamina {
-        margin-top: 0px;
+    .hotmer, .aubpanier, .hotamina, .lit-hotel, .hotelport, .hotmouette {
+        margin-bottom: 0px;
+        margin-top: 20px;
+        margin-left: 2.5%;
+        height: auto;
+        width: 95%;
     }
     .canne, .port1, .mouettes,  .mer, .panier, .amina {
-        width: auto;
+        width: 100%;
         height: auto;
     }
     .canne img, .port1 img, .mouettes img, .mer img, .panier img, .amina img {
@@ -841,26 +862,26 @@ input[type="search"] {
         object-fit: cover;
     }
     .plus p {
-        margin-left: 10px;
+       width: 100%;
+       height: auto;
+       margin-left: 10px;
+       margin-top: 10px;
+       font-size: 15px;
     }
-    .plus {
-        width: auto;
-        padding-left: 10px;
-    }
+   
     #activites {
         width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
     .maractiv {
-        margin-left: 10px;
         padding-left: 10px;
+        font-size: 20px;
     }
     #bloc-milieu {
         display: block;
-        width:auto;
+        width: 100%;
         height: auto;
-        padding-left: 5px;
     }
     #miniport, #miniparc {
         display: block;
