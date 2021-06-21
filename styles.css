@@ -1,6 +1,7 @@
 body {
     font-family: raleway, sans-serif;
     width: 100%;
+    margin: 0;
 }
 #logmenu {
     width: 90%;
@@ -670,7 +671,7 @@ input[type="search"] {
 @media screen and (max-width: 766px) 
 {
   body {
-        width: 100%; 
+        width: 100%;
     }
     .logo {
         margin-left: 10%;
@@ -831,7 +832,6 @@ input[type="search"] {
         object-fit: cover;
     }
     .plus p {
-       width: 100%;
        height: auto;
        margin-left: 10px;
        margin-top: 10px;
